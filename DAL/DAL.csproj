@@ -40,6 +40,7 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,7 +58,6 @@
     <Compile Include="Category.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Comment.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
@@ -67,6 +67,7 @@
     <Compile Include="FavLogoTitle.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="LogDAO.cs" />
     <Compile Include="Log_Table.cs">
       <DependentUpon>PostModel.tt</DependentUpon>
     </Compile>
