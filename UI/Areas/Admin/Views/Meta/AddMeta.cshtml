@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "AddMeta";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+@model DTO.MetaDTO
+
+<section class="content-leader">
+    <h1>Add Meta operation</h1>
+    <ol class="breadcrumb float-sm-none" style="margin-bottom: 0px;">
+        <li class="breadcrumb-item"><a>Admin</a></li>
+        <li class="breadcrumb-item"><a>Meta</a></li>
+        <li class="breadcrumb-item active"><a>Add Meta</a></li>
+    </ol>
+</section>
+<div class="card-footer">
+    <button type="submit" class="btn btn-primary">Meta List</button>
+</div>
+<section class="content">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="box box-primary">
+                @using (Html.BeginForm("AddMeta", "Meta", new { area = "Admin" }, FormMethod.Post, new { @enctype = "multipart/form-data" }))
+                {
+                    @Html.Partial("~/Areas/Admin/Views/Meta/Partial/MetaForm.cshtml", Model)
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
